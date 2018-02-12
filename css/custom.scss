@@ -1,0 +1,356 @@
+
+// Vars
+
+$tosca: #58dcb9;
+$red: #f92626;
+$yellow: #fed501;
+$boxShadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1), 0 7px 50px 0 rgba(0, 0, 0, 0.08);
+$bg: rgba(88, 220, 185, 0.03);
+
+
+
+
+
+
+body {
+    background: $bg;
+}
+
+span.tosca {
+    color: $tosca;
+}
+
+.mb2em {
+    margin-bottom: 2em;
+}
+
+.mt10rem {
+    margin-top: 10rem;
+}
+
+
+.boxed {
+    padding-right: 7.6rem;
+    padding-left: 7.6rem;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 1.2rem;
+    height: 4rem;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 0;
+    .navbar-toggle {
+        margin-top: -3px;
+        .icon-bar {
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 100px;
+            background-color: $tosca;
+            &:first-of-type {
+                background-color: $red;
+            }
+            &:last-of-type {
+                background-color: $yellow;
+            }
+        }
+    }
+    .navbar-spacer {
+        float: right;
+        margin: -1.3rem 4.5rem 0;
+        width: 1px;
+        height: 4rem;
+        background-color: #e0e0e0;
+    }
+    .navbar-address {
+        font-size: .8rem;
+        margin-top: -5px;
+    }
+}
+
+.brand img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.65rem;
+    height: 4rem;
+    margin-top: -10px;
+}
+
+footer {
+    .brand img {
+        height: 6rem;        
+    }
+}
+
+.menu {
+    width: 25%;
+    transition: all .3s ease;
+    .menu-list {
+        > li {
+            margin-top: 1rem;
+        }
+        ul {
+            padding-left: 1rem;
+            li {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.owl-carousel {
+    cursor: move;
+    .owl-item {
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.page-header {
+    margin: 7rem 0 10.8rem;
+}
+
+.section-news {
+    .news-item {
+        position: relative;
+        height: 340px;
+    }
+}
+
+.project-item {
+    height: 380px;
+    .project-hover {
+        padding: 2.35rem 3rem;
+    }
+}
+
+.section-about {
+    .dots-image {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 340px;
+        &:before {
+            content: "";
+            position: absolute;
+            left: -80px;
+            bottom: 30px;
+            width: 160px;
+            height: 160px;
+            background: transparent;
+            border: 5px solid $tosca;
+        }
+        img {
+            display: block;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .section-about-title {
+        margin-bottom: 2rem;
+    }
+}
+
+.client-carousel {
+    .client-carousel-item {
+        img {
+            display: inline-block;
+            width: auto;
+            height: auto;
+        }
+    }
+    .client-box {
+        position: relative;
+        color: #999;
+        background-color: #fff;
+        padding: 4rem 3.28rem 3.28rem;
+        // height: 280px;
+        transition: all .2s ease;
+        &:hover {
+            box-shadow: $boxShadow;
+            transform: translateY(-3px);
+        }
+        img {
+            min-height: inherit;
+        }
+    }
+}
+
+.menu-footer {
+    .copy {
+        font-size: 12px;
+    }
+}
+
+.experience-box {
+    .experience-info {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 0.8rem;
+        font-size: 1.57rem;
+        line-height: 1.181;
+        color: #000;
+    }
+    .circles {
+        position: relative;
+        left: 195px;
+        bottom: 30px;
+    }
+}
+
+.circles {
+    span {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $tosca;
+        &:first-of-type {
+            background-color: $red;
+        }
+        &:last-of-type {
+            background-color: $yellow;
+        }
+    }
+}
+
+.map {
+    border-radius: 6px;
+    transition: all .2s ease;
+    &:hover {
+        box-shadow: $boxShadow;
+    }
+    .gm-style {
+        border-radius: 6px;
+    }
+}
+
+.about {
+    .page-inner {
+        margin: 0 6rem;
+    }
+    .col-service {
+        color: #333;
+        margin-top: 4rem;
+        padding: 0 1rem;
+        h4 {
+            color: $tosca
+        }
+    }
+    .image-list {
+        .image {
+            display: inline-block;
+            width: 24%;
+            height: 140px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .content-entry-image {
+        background: url("../images/7.png")
+    }
+}
+
+.section-info {
+    .circles {
+        margin-top: 15px;
+        span {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.paragraph {
+    font-size: 1.1rem;
+}
+
+.row-team {
+    .team-hover {
+        background-color: $tosca;
+    }
+}
+
+.col-service {
+    h4 {
+        margin-top: 3.3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.content-entry-image {
+    background: url('https://source.unsplash.com/user/worldsbetweenlines/') center no-repeat;
+    background-size: cover;
+}
+
+.news-item {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.news-hover {
+    .read-more {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-height: 600px) {
+    .menu {
+        .menu-list {
+            top: 10rem;
+            > li {
+                font-size: 1.5rem;
+            }
+        }
+        .menu-footer {
+            bottom: 3rem;
+        }
+    }
+}
