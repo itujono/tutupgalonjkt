@@ -342,24 +342,24 @@
 
 
 
-	   $('.news-carousel').owlCarousel({
-		    margin:30,
-		    smartSpeed:250,
-		    dots:true,
-		    responsiveRefreshRate:0,
-		    responsive:{
-		       0:{
-		            items:1
-		        },
-		        720:{
-		            items:2,
+	//    $('.news-carousel').owlCarousel({
+	// 	    margin:30,
+	// 	    smartSpeed:250,
+	// 	    dots:true,
+	// 	    responsiveRefreshRate:0,
+	// 	    responsive:{
+	// 	       0:{
+	// 	            items:1
+	// 	        },
+	// 	        720:{
+	// 	            items:2,
 
-		        },
-		        1280:{
-		            items:3
-		        }
-		    }
-		});
+	// 	        },
+	// 	        1280:{
+	// 	            items:3
+	// 	        }
+	// 	    }
+	// 	});
 
 	   $(".review-carousel").owlCarousel({
 			responsive:{

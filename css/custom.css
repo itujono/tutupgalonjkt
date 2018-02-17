@@ -119,7 +119,7 @@ footer .brand img {
 
 .section-news .news-item {
   position: relative;
-  height: 340px;
+  margin-bottom: 2em;
 }
 
 .project-item {
