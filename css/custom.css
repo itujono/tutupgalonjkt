@@ -329,3 +329,13 @@ footer .brand img {
     bottom: 3rem;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .boxed {
+    padding-left: 1.7rem !important;
+    padding-right: 1.7rem !important;
+  }
+  .menu {
+    width: 75% !important;
+  }
+}
